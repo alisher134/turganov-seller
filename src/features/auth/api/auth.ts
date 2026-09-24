@@ -1,5 +1,6 @@
 import { apiClient } from '@/shared/api';
-import type { SignInFormValues } from '../model/schema';
+
+import type { SignInFormValues } from '../model/sign-in-schema';
 
 export interface User {
   id: string;

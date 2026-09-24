@@ -1,5 +1,6 @@
 import axios from 'axios';
 import type { InternalAxiosRequestConfig } from 'axios';
+
 import { tokenStorage } from '@/shared/lib';
 
 export const apiClient = axios.create({

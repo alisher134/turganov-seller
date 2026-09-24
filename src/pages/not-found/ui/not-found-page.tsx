@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+
 import { Button } from '@/shared/ui';
 
 export function NotFoundPage() {

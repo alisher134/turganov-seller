@@ -19,7 +19,7 @@ export function Header() {
             Главная
           </NavLink>
           <NavLink
-            to="/auth/signin"
+            to="/auth/sign-in"
             className={({ isActive }) =>
               isActive
                 ? 'text-foreground underline underline-offset-4'

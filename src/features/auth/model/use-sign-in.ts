@@ -1,8 +1,10 @@
 import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router';
+
 import { getErrorMessage, tokenStorage } from '@/shared/lib';
+
 import { authApi, type SignInResponse } from '../api';
-import type { SignInFormValues } from './schema';
+import type { SignInFormValues } from './sign-in-schema';
 
 export interface UseSignInOptions {
   onSuccess?: (data: SignInResponse) => void;

@@ -1,4 +1,5 @@
 import { LogIn } from 'lucide-react';
+
 import { useZodForm } from '@/shared/hooks';
 import {
   AppForm,
@@ -11,10 +12,11 @@ import {
   Spinner,
   TextField,
 } from '@/shared/ui';
-import { signInSchema, useSignIn, type SignInFormValues } from '../model';
-import type { SignInResponse } from '../api';
 
-interface SignInFormProps {
+import type { SignInResponse } from '../api';
+import { signInSchema, useSignIn, type SignInFormValues } from '../model';
+
+export interface SignInFormProps {
   onSuccess?: (data: SignInResponse) => void;
 }
 
@@ -53,7 +55,7 @@ export function SignInForm({ onSuccess }: SignInFormProps) {
                   placeholder="например, user123"
                   autoComplete="username"
                   disabled={isLoading}
-                  error={errors.username}
+                  error={errors.username?.message}
                   {...register('username')}
                 />
 
@@ -63,7 +65,7 @@ export function SignInForm({ onSuccess }: SignInFormProps) {
                   placeholder="••••••••"
                   autoComplete="current-password"
                   disabled={isLoading}
-                  error={errors.password}
+                  error={errors.password?.message}
                   {...register('password')}
                 />
               </FieldGroup>

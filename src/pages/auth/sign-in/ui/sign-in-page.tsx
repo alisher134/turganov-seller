@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/shared/ui';
 import { SignInForm } from '@/features/auth';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/shared/ui';
 
 export function SignInPage() {
   return (

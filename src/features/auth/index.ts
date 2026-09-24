@@ -1,3 +1,2 @@
-export { SignInForm } from './ui/SignInForm';
-export * from './model';
-export * from './api';
+export { SignInForm } from './ui/sign-in-form';
+export type { SignInFormProps } from './ui/sign-in-form';

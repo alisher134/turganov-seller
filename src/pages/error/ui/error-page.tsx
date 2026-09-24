@@ -1,4 +1,5 @@
 import { isRouteErrorResponse, useRouteError, Link } from 'react-router';
+
 import { Button } from '@/shared/ui';
 
 export function ErrorPage() {
