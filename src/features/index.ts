@@ -1,2 +1,2 @@
 // Public API for user features
-export {};
+export * from './auth';

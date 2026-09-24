@@ -18,6 +18,16 @@ export function Header() {
           >
             Главная
           </NavLink>
+          <NavLink
+            to="/auth/signin"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-foreground underline underline-offset-4'
+                : 'text-muted-foreground transition-colors hover:text-foreground'
+            }
+          >
+            Вход
+          </NavLink>
         </nav>
       </div>
     </header>
